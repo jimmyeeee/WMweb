@@ -22,7 +22,7 @@
 #loading{
     height: 100vh;
     width: 100%;
-    background-image: url(./object/doublehand.jpg);
+    background-image: url(./images/doublehand.jpg);
     background-color: #f9f9f96c;
     background-repeat: no-repeat;
     background-position: center center;
@@ -154,7 +154,7 @@ main{
     right: 0%;
     z-index: -1;
     height: 100%;
-    width: auto;
+    width: 80%;
 }
 .content{
     height: 100vh;
@@ -163,6 +163,11 @@ main{
 .right .content a img{
     mix-blend-mode: multiply;
 }
+
+#img2,#img3,#img4,#img5{
+    display: none;
+}
+
 .title{
     position: absolute;
     bottom: 10%;
@@ -171,9 +176,11 @@ main{
 .title h2{
     font-size: 3.5rem;
     letter-spacing: .2em;
+    color: azure;
 }
 .title h3{
     font-size: 2rem;
+    color: azure;
 }
 .switch{
     position: absolute;
@@ -182,20 +189,44 @@ main{
     right: 50%;
     z-index: 9998;
 }
-.switch ul,.social_connect ul{
+.switch ul{
     list-style: none;
     padding: 0%;
 }
-.switch ul li{
-    display: inline-block;
+.social_connect ul{
+    display: flex;
+    list-style: none;
+    padding: 0%;
 }
-.switch ul li a img,.social_connect ul li a img{
+
+
+.switch_dot{
+    display: inline-block;
+    margin: 0 8px;
+}
+.social_connect ul li a img{
     width: 100%;
     margin: 2%;
 }
+
+.switch_dot a{
+    background:url(./images/switch_dot.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 12px;
+    height: 12px;
+}
+.switch_dot a:hover{
+    background:url(./images/switch_dot_hover.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+}
+
 .social_connect{
     position: absolute;
-    width: 60px;
+    width: 10%;
     right: 3%;
     bottom: 3%;
     z-index: 9999;
@@ -204,3 +235,4 @@ main{
     display: inline-block;
     margin: 10px;
 }
+
