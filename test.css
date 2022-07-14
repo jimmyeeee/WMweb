@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.switch_dot a{
+    background:url(./images/switch_dot.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.switch_dot a:hover{
+    background:url(./images/switch_dot_hover.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
