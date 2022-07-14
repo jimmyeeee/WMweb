@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    80%{
+      transform: rotate(1800deg);  
+    }
+    100%{
+        transform: rotate(2520deg);
+    }
+}
+@keyframes vanish{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+*{
+    margin: 0%;
+}
+#loading{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/doublehand.jpg);
+    background-color: #f9f9f96c;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: color;
+    position: fixed;
+    z-index: 9999999;
+    align-items: center;
+    text-align: center;
+    animation: vanish 1s 4s forwards;
+}
+#loading h1{
+    width: 10%;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+#rotateline{
+    position: absolute;
+    width: 80% ;
+    top: -8%;
+    left: 9%;
+    animation: rotate 3s 2;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #151414;
+}
+.left{
+    position: fixed;
+    display: flex;
+    width: 20%;
+    z-index: 9999;
+    box-shadow: -1px 0 10px -2px #8b8585;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/nav_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -  20px;
+    /* background-color: #151414; */
+    display: inline-block;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+}
+img{
+    width: 100%;
+}
+.logo{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.logo h1{
+    margin: 0 auto;
+}
+header .logo img{
+    width: 50%;
+    height: auto;
+    margin: 10% auto;
+    padding: 0 10px;
+}
+header .left_main_nav{
+    font-size: 1.3rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+header .left_main_nav ul{
+    list-style: none;
+    line-height: 3rem;
+    padding: 0;
+    margin: 5% auto;
+}
+header .left_main_nav ul li{
+    list-style: none;
+}
+.left_main_nav a,footer a{
+    color: #ffffff;
+    text-decoration:none;
+}
+.switch li:hover{
+    border-image: url(images/nav_underline.png);
+}
+.left_main_nav a:hover,footer a:hover{
+    color: #ffbf00;
+}
+.drop_down_menu{
+    position: absolute;
+    width: 100%;
+    left: 1000%;
+    z-index: 99999; 
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.drop_down_menu li{
+    border-bottom: solid 2px #6B6A6A;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1% auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.drop_down_menu li a{
+    display: flex;
+    align-items:center;
+    width: 100%;
+}
+.drop_target:hover .drop_down_menu{
+    /* display: block; */
+    left: 100%;
+    top: 37%;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+.underline{
+    width: 30%;
+    margin-right: 5%;
+}
+footer{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 2%;
+}
+footer nav{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+footer nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 5% auto;
+}
+footer small{
+    color:#dddddd;
+    font-size: .6rem;
+}
+.right{
+    position: relative;
+    right: 0%;
+    top: 0%;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    z-index: 9990;
+}
+main{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: -1;
+    height: 100%;
+    width: 80%;
+}
+.content{
+    height: 100vh;
+    background-color: #404040;
+}
+.right .content a img{
+    mix-blend-mode: multiply;
+}
+
+#img2,#img3,#img4,#img5{
+    display: none;
+}
+
+.title{
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+.title h2{
+    font-size: 3.5rem;
+    letter-spacing: .2em;
+    color: azure;
+}
+.title h3{
+    font-size: 2rem;
+    color: azure;
+}
+.switch{
+    position: absolute;
+    width: auto;
+    bottom: 5%;
+    right: 50%;
+    z-index: 9998;
+}
+.switch ul{
+    list-style: none;
+    padding: 0%;
+}
+.social_connect ul{
+    display: flex;
+    list-style: none;
+    padding: 0%;
+}
+
+
+.switch_dot{
+    display: inline-block;
+    margin: 0 8px;
+}
+.social_connect ul li a img{
+    width: 100%;
+    margin: 2%;
+}
+
+.switch_dot a{
+    background:url(./images/switch_dot.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 12px;
+    height: 12px;
+}
+.switch_dot a:hover{
+    background:url(./images/switch_dot_hover.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+}
+
+.social_connect{
+    position: absolute;
+    width: 10%;
+    right: 3%;
+    bottom: 3%;
+    z-index: 9999;
+}
+.social_connect ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
