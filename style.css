@@ -118,7 +118,40 @@ header .left_main_nav ul li{
 .left_main_nav a:hover,footer a:hover{
     color: #ffbf00;
 }
-
+.drop_down_menu{
+    position: absolute;
+    width: 100%;
+    left: 1000%;
+    z-index: 99999; 
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.drop_down_menu li{
+    border-bottom: solid 2px #6B6A6A;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1% auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.drop_down_menu li a{
+    display: flex;
+    align-items:center;
+    width: 100%;
+}
+.drop_target:hover .drop_down_menu{
+    /* display: block; */
+    left: 100%;
+    top: 37%;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+.underline{
+    width: 30%;
+    margin-right: 5%;
+}
 footer{
     position: absolute;
     text-align: center;
