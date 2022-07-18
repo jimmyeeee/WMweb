@@ -269,3 +269,164 @@ main{
     margin: 10px;
 }
 
+/* page title */
+#page_main{
+    width: 80%;
+    height: auto;
+    padding-left: 20%;
+    overflow: hidden;
+}
+.page_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: auto;
+    overflow-y: hidden;
+    background-color: rgba(0, 0, 0, .7);
+    background-size: cover;
+    background-position: center -40vh;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat; 
+}
+.shop_page_title_background{
+    background-image:url(images/title_img.jpg);
+
+}
+.about_us_page_title_background{
+    background-image:url(images/about_title.jpg);
+    background-position: 0 -74vh;
+}
+.page_title_h1{
+    font-family: 'Noto Sans TC',sans-serif;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+/* page title end */
+
+
+/* shop section */
+#shop_no1{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    background-image: url(images/recommend.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    height: 70vh;
+}
+#shop_no1 nav{
+    display: inline-block;
+    width: auto;
+    margin-right: 17%;
+    margin-bottom: 3%;
+}
+#shop_no1 nav ul{
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+    font-size: 2rem;
+}
+#shop_no1 nav ul li{
+    margin: 0 30px;
+    font-family: 'Noto Sans TC',sans-serif;
+    border-bottom:2px solid #c68700;
+}
+#shop_no1 nav ul li a{
+    color: #c68700;
+    text-decoration: none;
+}
+.normal_product_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.normal_product_title_h1{
+    text-align: center;
+    font-family: 'Noto Sans TC',sans-serif;
+    font-size: 1.6rem;
+    width: auto;
+    margin: 6% auto 1%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+#normal_product{
+    display: flex;
+    justify-content: space-around;
+}
+#normal_product>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin: 5% auto;
+}
+#normal_product>div>div{
+    display: inline-block;
+}
+.normal_product_img{
+    width: 45%;
+    height: auto;
+}
+.normal_product_img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product_nav{
+    padding: 5% 0;
+    height: auto;
+    list-style-type: none;
+}
+.product_nav li{
+    margin: 20px 30px;
+}
+.product_nav li a{
+    color: #c68700;
+    text-decoration: none;
+    margin: 20px 30px;
+    font-family: 'Noto Sans TC',sans-serif;
+    border-bottom:2px solid #c68700;
+}
+.product_introduction{
+    margin: 20px;
+}
+/* shop section end */
+
+
+/* about_us section */
+.philosophy{
+    width: 100%;
+    height: 50vh;
+    padding: 10%;
+    background: url(./images/philosophy.jpg);
+    background-color: rgba(0, 0, 0, .7);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat; 
+}
+.philosophy h2{
+    margin: 10px;
+    font-size: xx-large;
+}
+.philosophy article.text{
+    margin: 5% 10% 10%;
+}
+.philosophy article.text p{
+    font-size: x-large;
+    margin: 5% 0;
+}
+
+
+
+.ground{
+    width: 100%;
+    height: 80vh;
+    background-color: #c68700;
+}
+/* about_us section end */
