@@ -425,8 +425,89 @@ main{
 
 
 .ground{
+    position: relative;
     width: 100%;
-    height: 80vh;
-    background-color: #c68700;
+    height: 60vh;
+    padding: 10%;
+    background:url(./images/ground.png),linear-gradient(90deg,#15141400 20%,#151414 100%),linear-gradient(180deg,#15141400 75%,#151414 100%);
+    background-size: 40%;
+    background-blend-mode: darken;
+    background-position: 0 85%;
+    background-repeat: no-repeat; 
+}
+.ground>h2{
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    font-size: 2rem;
+}
+.ground .p1{
+    position: absolute;
+    right: 35%;
+    top: 24%;
+    font-size: 1.2rem;
+}
+.ground .p2{
+    position: absolute;
+    bottom: 14%;
+    left: 20%;
+    font-size: 1.2rem;
+}
+
+.min_sup_img{
+    position: absolute;
+    padding: 5%;
+    color: black;
+    transform: rotate(45deg);
+    right: 20%;
+    bottom: -6%;
+}
+.about_us_grid{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+    grid-gap: 20px;
+}
+.ground .col{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: white;
+    overflow: hidden;
+}
+.ground_blender{
+    background: linear-gradient(135deg,#15141400 35%,#151414 99%);;
+}
+.ground .col img{
+    transform: rotate(-45deg);
+    mix-blend-mode:multiply
+}
+.ground .col .img1{
+    width: 215px;
+}
+.ground .col .img2{
+    position: absolute;
+    width: 215px;
+    top: -29%;
+    right: -39%;
+}
+.ground_blender_img3{
+    background: linear-gradient(135deg,#15141400 35%,#151414 99%);
+}
+.ground .col .img3{
+    position: absolute;
+    width: 211px;
+    right: -37%;
+    top: 21%;
+    mix-blend-mode: multiply;
+}
+.ground .col .img4{
+    width: 211px;
 }
 /* about_us section end */
+
+.team_page_title_background{
+    background-image:url(images/meeting.jpg);
+    background-position: 0px -23vh;
+}
