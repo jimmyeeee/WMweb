@@ -19,6 +19,10 @@
 *{
     margin: 0%;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 #loading{
     height: 100vh;
     width: 100%;
@@ -507,7 +511,147 @@ main{
 }
 /* about_us section end */
 
+
+/* team section */
 .team_page_title_background{
     background-image:url(images/meeting.jpg);
     background-position: 0px -23vh;
+}
+.team{
+    padding: 10%;
+    width: 80%;
+    grid-gap: 10px;
+}
+.team_grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.team_photo{
+    width: 100%;
+}
+.team_photo figure{
+    display:flex;
+    flex-direction: column;
+}
+.team_photo figure img{
+    width: 70%;
+    margin: auto;
+}
+.team_photo figure figcaption{
+    width: 80%;
+    margin: 10% auto 0 ;
+    line-height: 1.5rem;
+}
+.history{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10%;
+}
+.history>article{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.history_list{
+    margin-top: 10%;
+}
+.history_list article{
+    margin: 10px 0;
+}
+.history_list article figure{
+    display: flex;
+}
+.history_list article figure img{
+    width: 20%;
+    height: 20px;
+    margin: 8px 10px 0;
+}
+.history_list figcaption{
+    line-height: 1.5rem;
+}
+/* team section end */
+
+/* news_page_title_background */
+.news_page_title_background{
+    background-image:url(images/newspaper.jpg);
+    background-position: 0px -38vh;
+}
+.news_list{
+    width: 80%;
+    padding: 5% 10%;
+}
+.news_list a{
+    display: block;
+    margin: 0 auto 4%;
+}
+.news_list a figure{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 8%;
+    width: 100%;
+    padding:3% 5%;
+    box-sizing: border-box;
+    background-color: rgb(255,255,255,.2);
+    border-radius: 10px;
+}
+.news_list a figure .img_class{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.news_list a figure .img_class #img1{
+    width: 120%;
+}
+.news_list a figure figcaption{
+    padding: 5%;
+    overflow: hidden;
+}
+.news_list a figure figcaption div{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+
+}
+.news_list a figure figcaption div h2{
+    font-size: 1.5rem;
+}
+.news_list a figure figcaption .brief_information{
+    margin: 2% 2% 0 5%;}
+
+/* news_page_title_background end */
+
+/* news_article page */
+#back_botton{
+    width: 5%;
+    position: fixed;
+    display: inline-block;
+    left: 25%;
+    top: 5%
+}
+.news_article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 10%;
+}
+.news_article h2{
+    font-size: 3rem;
+}
+.news_article small{
+    font-size: 1rem;
+    color: rgb(255,255,255,.5);
+}
+.news_article figure{
+    width: 60%;
+    overflow: hidden;
+}
+.news_article *{
+    margin: 1% auto;
+}
+.news_article figcaption{
+    line-height: 1.8rem;
+    text-indent:2rem;
+    font-size: 1.2rem;
+    color: rgb(255,255,255,.8);
+    margin-top: 3%;
 }
