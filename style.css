@@ -277,6 +277,7 @@ main{
 #page_main{
     width: 80%;
     height: auto;
+    padding-bottom:10% ;
     padding-left: 20%;
     overflow: hidden;
 }
@@ -654,4 +655,97 @@ main{
     font-size: 1.2rem;
     color: rgb(255,255,255,.8);
     margin-top: 3%;
+}
+/*  */
+
+/* notes page section */
+.notes_page_title_background{
+    background-image: url("./images/note.jpg");
+    background-position: 0 -47vh;
+}
+.notes_list{
+    width: 80%;
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    grid-gap: 10%;
+    position: relative;
+}
+.notes_list a{
+    display: block;
+    width: auto;
+    height: 300px;
+}
+.notes_list .news_list_botton{
+    position: relative;
+    padding: 10px;
+}
+.notes_list .news_list_botton .text{
+    position: absolute;
+    width: 80%;
+    top: 10px;
+    left: 10px;
+    background-color: #6B6A6Ac8;
+    box-sizing: border-box;
+    z-index: 99998;
+    padding: 10% 15% 30%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    border-radius: 10px;
+}
+.notes_list .news_list_botton .text u{
+    text-decoration: 1 solid;
+    color: #FFCC00;
+}
+.notes_list .news_list_botton .text u:hover{
+    text-decoration: 1 solid;
+    color: white;
+}
+.notes_list .news_list_botton figure{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    box-sizing: border-box;
+    z-index: 99999;
+    right: -4%;
+    top: 30vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.notes_list .news_list_botton figure img{
+    width: 120%;
+}
+.notes_decoration{
+    display: block;
+    width: 55%;
+    height: 35vh;
+    position: absolute;
+    z-index: 99998;
+    top: 11vh;
+    left: 9vh;
+}
+.notes_decoration_1,.notes_decoration_2,.notes_decoration_3,.notes_decoration_4{
+    font-size: 1rem;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    height: 11%;
+}
+.notes_1{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-gap: 10%;
+    padding: 20% 10% 10%;
+}
+.notes_1 .notes_1_text{
+    background-color: #6B6A6Ac8;
+    padding: 10% 15% 15%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+.notes_1 .notes_1_text p{
+    text-indent: 2rem;
 }
