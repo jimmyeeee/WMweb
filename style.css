@@ -330,8 +330,8 @@ main{
 #shop_no1 nav{
     position: absolute;
     width: auto;
-    right: 1%;
-    bottom: 10%;
+    right: 18%;
+    bottom: 16%;
     border: 2px solid ;
     border-radius: 10px;
     padding: 2% 10%;
@@ -397,6 +397,81 @@ main{
     border-radius: 10px;
 }
 
+#permanent{
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+#permanent nav{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows:40vh;
+    grid-gap: 5%;
+    margin: 5%;
+    border-radius: 10px;
+}
+#permanent nav a{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#permanent nav a article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    padding-right:5% ;
+    padding-top: 27%;
+    animation: permanent_normal .5s forwards;
+}
+.no2_product_position{
+    top: 24vh;
+}
+#permanent nav a article h3{
+    color: #86888A;
+    font-size: 1rem;
+    margin-top: 5%;
+    margin-left: 35%;
+    line-height: 1.5rem;
+}
+@keyframes permanent_hover {
+    100%{
+        background-color: #000000BD;
+        top: 0;
+    }
+}
+@keyframes permanent_normal {
+    0%{        
+        background-color: #000000BD;
+        top: 0;
+    }
+    100%{
+        top: 24vh;
+    }
+}
+@keyframes permanent_img_hover{
+    100%{
+        width: 120%;
+    }
+}
+@keyframes permanent_img_normal{
+    0%{
+        width: 120%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+#permanent nav a:hover article{
+    animation: permanent_hover .5s forwards;
+}
+#permanent nav a img{
+    animation:permanent_img_normal 1s forwards;
+}
+#permanent nav a:hover img{
+    animation:permanent_img_hover 1s forwards;
+}
+
 .product_nav{
     padding: 5% 0;
     height: auto;
@@ -414,6 +489,90 @@ main{
 }
 .product_introduction{
     margin: 20px;
+}
+
+#important{
+    width: 100%;
+    display: flex;
+    justify-items: flex-start;
+}
+#important figure{
+    width: 40%;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 5%;
+}
+#important figure img{
+    width: 100%;
+    border-radius: 10px;
+}
+#important article{
+    display: inline-block;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 5% 5% 0 0;
+}
+#important article h2,#important article h3,#important article h4,#important article div{
+    width: 100%;
+}
+#important article h2{
+    font-size: 2rem;
+    margin: 5% 0;
+}
+#important article div{
+    margin: 5% 0;
+}
+#important article div *,#introduct *{
+    margin: 2% 0;
+}
+#important article div h3{
+    color: #86888A;
+}
+#important article div h4{
+    font-size: 1rem;
+}
+#introduct{
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+#introduct h2{
+    color:#86888A;
+}
+#product nav{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    margin-top:4% ;
+}
+#product nav a{
+    display: inline-block;
+    width: 20%;
+    background-color:#ffffff ;
+    border-radius: 10px;
+}
+#product nav a div{
+    margin: 2% auto;
+    width: 100%;
+    padding: 2%;
+    color: #000;
+    text-align: center;
+    box-sizing: border-box;
+}
+/* @keyframes no1_product_hover{
+    0%{
+        background-color: #ffbf007f;
+        box-shadow: 5px 5px 6px #ffbf007f;
+    }
+    100%{
+        background-color: #ffbf00;
+        box-shadow: 0 0 0 ;
+    }
+} */
+#product nav a:hover{
+    animation:no1_product_hover .6s 1 forwards;
 }
 /* shop section end */
 
